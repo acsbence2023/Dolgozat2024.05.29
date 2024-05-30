@@ -1,0 +1,77 @@
+﻿<UserControl x:Class="Dolgozat0529.Task2Control"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             Height="620" Width="1100">
+    <Grid Background="Wheat">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="2"
+                   Text="Information 5" 
+                   FontSize="30" 
+                   FontWeight="Bold" 
+                   Foreground="Orange" 
+                   HorizontalAlignment="Left"
+                   VerticalAlignment="Center"
+                   Margin="450,10,0,20"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0"
+                   Text="Username:" 
+                   VerticalAlignment="Center"
+                   Margin="20,0"
+                   FontSize="25"
+                   />
+
+        <TextBlock Grid.Row="2" Grid.Column="0"
+                   Text="Remember me" 
+                   VerticalAlignment="Top"
+                   Margin="20,10,0,0"
+                   FontSize="18"/>
+
+        <TextBox Grid.Row="1"
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Center"
+                 Height="444"
+                 Width="700"/>
+
+
+        <TextBox Grid.Row="1" 
+                 Margin="0,0,10,0" 
+                 VerticalAlignment="Top"
+                 HorizontalAlignment="Right"
+                 Height="444" 
+                 Width="70"
+                 TextWrapping="Wrap" 
+                 AcceptsReturn="True"/>
+
+        <StackPanel Grid.Row="2" 
+                    Orientation="Horizontal"
+                    HorizontalAlignment="Left"
+                    Margin="468,29,0,11">
+            <Button Content="Login" 
+                    Width="75" 
+                    Height="30" 
+                    Background="Orange" 
+                    Foreground="White" 
+                    Margin="0,0,10,0"
+                    VerticalAlignment="Center"/>
+            <Button Content="Cancel" 
+                    Width="75" 
+                    Height="30" 
+                    Background="LightBlue" 
+                    Foreground="Black"
+                    VerticalAlignment="Center"/>
+        </StackPanel>
+    </Grid>
+</UserControl>
